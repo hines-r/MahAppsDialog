@@ -12,5 +12,6 @@
     WindowStartupLocation="CenterScreen"
     mc:Ignorable="d">
 
-    <Grid />
+    <ContentControl x:Name="ActiveItem" />
+
 </Controls:MetroWindow>
