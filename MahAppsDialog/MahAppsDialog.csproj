@@ -80,9 +80,13 @@
     <Compile Include="Bootstrapper.cs" />
     <Compile Include="RelayCommand.cs" />
     <Compile Include="ViewModels\ButtonViewModel.cs" />
+    <Compile Include="ViewModels\DialogViewModel.cs" />
     <Compile Include="ViewModels\ShellViewModel.cs" />
     <Compile Include="Views\ButtonView.xaml.cs">
       <DependentUpon>ButtonView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DialogView.xaml.cs">
+      <DependentUpon>DialogView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\ShellView.xaml.cs">
       <DependentUpon>ShellView.xaml</DependentUpon>
@@ -120,6 +124,10 @@
   </ItemGroup>
   <ItemGroup>
     <Page Include="Views\ButtonView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\DialogView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

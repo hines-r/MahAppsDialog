@@ -1,0 +1,37 @@
+﻿<Dialog:CustomDialog
+    x:Class="MahAppsDialog.Views.DialogView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Dialog="clr-namespace:MahApps.Metro.Controls.Dialogs;assembly=MahApps.Metro"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:MahAppsDialog.Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Dialog Title"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    mc:Ignorable="d">
+
+    <StackPanel Margin="0,10">
+        <TextBlock Margin="0,0,0,5" Text="Input:" />
+        <TextBox Margin="0,0,0,10" Text="{Binding Input}" />
+
+        <TextBlock Margin="0,0,0,5" Text="Other Input:" />
+        <TextBox Margin="0,0,0,10" Text="{Binding OtherInput}" />
+
+        <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+            <Button
+                Width="100"
+                Margin="10"
+                Command="{Binding OkCommand}"
+                Content="Ok" />
+
+            <Button
+                Width="100"
+                Margin="10"
+                Command="{Binding CloseCommand}"
+                Content="Close" />
+        </StackPanel>
+
+    </StackPanel>
+
+</Dialog:CustomDialog>

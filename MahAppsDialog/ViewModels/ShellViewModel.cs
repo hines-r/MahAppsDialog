@@ -14,7 +14,7 @@ namespace MahAppsDialog.ViewModels
     {
         public ShellViewModel()
         {
-            ActivateItem(new ButtonViewModel(DialogCoordinator.Instance));
+            ActivateItem(new ButtonViewModel());
         }
     }
 }
